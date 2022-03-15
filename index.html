@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuck Industries Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="images/Fuck Industries logos/Fuck Industries logo invert only.png" />
+  </head>
+  
+  <body>
+    <header>
+      <div class="navbar">
+        <img onclick="topFunction()" src="images/Fuck Industries logos/Fuck Industries logo invert long.png" class="logo"/>
+        <script>
+          function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          } 
+        </script>
+        <nav>
+          <ul id="menulist">
+            <li>
+              <a href="#fuckcard">FuckBook 2.0</a>
+              <a href="#iphonecard">iPhone Diamond Rose</a>
+              <a href="#aldipencard">Aldi® Pen</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#socials"><button class="contact" type="button"><p>Contact</p></button></a>
+        <img src="images/icons/menu.png" class="menu" onclick="togglemenu()"/>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <p class="description">NEW</p>
+            <h1>The new<br/>FuckBook 2.0.</h1>
+            <p>It fucks (you up) even more.</p>
+            <h3>From $420</h3>
+            <a href="#fuckcard"
+              ><button class="ordernow" type="button">
+                Order now<img
+                  src="images/icons/white arrow.png"
+                  class="arrow"
+                  alt="arrow"
+                /></button
+            ></a>
+      </div>
+
+      <div class="col-2">
+        <img src="images/FuckBook 2.0.png" class="fuckbook" alt="FuckBook 2.0" />
+        <div class="colorbox"></div>
+      </div>
+      </div>
+      </div>
+
+      <div class="cards">
+        <div class="carditem fuckcard" id="fuckcard">
+          <img src="images/card images/FuckBook 2.0 cardimage.png" class="aldipenimage">
+          <div class="card-content">
+            <h2 class="fuckcard-title">FUCKBOOK 2.0</h2>
+            <p class="fuckcard-body"><br>Discover new possibilities<br>with market-leading performance.<br>Time to redefine your expectations.</p>
+            <a href="#" ><button class="cartlink">Add to cart</button></a>
+          </div>
+        </div>
+        <div class="carditem iphonecard" id="iphonecard">
+          <img src="images/card images/iPhone diamond rose cardimage.png" class="aldipenimage">
+          <div class="card-content">
+            <h2 class="iphonecard-title">iPHONE DIAMOND ROSE</h2>
+            <p class="iphonecard-body"><br>Cutting edge technology <br>paired with one of a kind art. <br>Manufactured by Foxconn Technology.</p>
+            <a href="#" ><button class="cartlink">Add to cart</button></a>
+          </div>
+        </div>
+        <div class="carditem aldipencard" id="aldipencard">
+          <img src="images/card images/Kubelschreiber carbon cardimage.png" class="aldipenimage">
+          <div class="card-content">
+            <h2 class="aldipencard-title">ALDI® PEN</h2>
+            <p class="aldipen-body"><br>World-class pens with<br> an exclusive carbon finish.<br>Writing elevated to the next level.</p>
+            <a href="#" ><button class="cartlink">Add to cart</button></a>
+          </div>
+        </div>
+      </div>
+
+      </main>
+      <footer>
+        <div class="socials" id="socials">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="links"><img src="images/icons/facebook.png" /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="links"><img src="images/icons/instagram.png"/></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="links"><img src="images/icons/twitter.png"/></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="links"><img src="images/icons/reddit.png"/></a>
+        </div>
+      </footer>
+      <script>
+        var menulist = document.getElementById("menulist");
+              menulist.style.maxHeight = "0px";
+              function togglemenu() {
+                if (menulist.style.maxHeight == "0px") {
+                  menulist.style.maxHeight = "130px";
+                } else {
+                  menulist.style.maxHeight = "0px";
+                }
+              }
+      </script>
+  </body>
+</html>

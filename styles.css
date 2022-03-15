@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /* font-size:100% */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(Images/background\ topograph.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  z-index: 999 !important;
+}
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 180px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px 30px;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: #2be1ff;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin: 15px 69px;
+}
+
+.menu {
+  width: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+
+.arrow {
+  width: 20px;
+}
+
+.contact {
+  width: 110px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 10px;
+  margin-right: 40px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #46e9ff, #52bbff);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 130px 0;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-top: 120px;
+  margin-left: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.col-1:hover {
+    transition: margin-right 1s;
+    margin-right: 40px;
+}
+
+.col-1 h1 {
+  font-size: 55px;
+  margin-bottom: 7px;
+}
+
+.col-1 h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.col-1 p {
+  font-size: 30px;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 16px !important;
+  color: #d92600 !important;
+  margin-bottom: 0 !important;
+}
+
+.ordernow {
+  width: 110px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #46e9ff, #52bbff);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ordernow img {
+  display: none;
+}
+
+.ordernow:hover img {
+  display: block;
+}
+
+.ordernow:hover {
+  text-decoration: none !important;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease 0s;
+}
+
+.col-1::after {
+  content: "";
+  width: 12px;
+  height: 100%;
+  background: linear-gradient(to right, #46e9ff, #52bbff);
+  border-radius: 50px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.col-2 {
+  position: relative;
+  margin-top: 120px;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .fuckbook {
+  width: 700px;
+  margin-left: 400px;
+  cursor: crosshair;
+  z-index: 69;
+}
+
+.col-2 .fuckbook:hover {
+  animation: updown 3s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(+1%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(+1%);
+  }
+}
+
+.colorbox {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background: linear-gradient(to right, #46e9ff, #52bbff);
+  border-radius: 30px 0 0 30px;
+  height: 60%;
+  width: 70%;
+  z-index: 0;
+  transform: translateX(150px);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.carditem {
+  width: 480px;
+  height: 550px;
+  margin: 50px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  cursor: pointer;
+  min-width: 300px;
+  min-height: 530px;
+  font-size: 20px;
+  padding: 30px;
+  background-image: url(images/background\ topograph.jpg);
+  background-size: 870%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.carditem:hover{
+    transition: all 0.3s ease-in-out 0s;
+    width: 490px;
+    height: 570px;
+    margin: 30px;
+}
+
+.card-content {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.cartlink{
+  width: 110px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 10px;
+  margin-top: 15px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #46e9ff, #52bbff);
+  cursor: pointer;
+  text-decoration: none;
+}
+.aldipenimage{
+  width: 400px;
+  height: auto;
+  margin: 10px 10px 20px 10px;
+}
+
+.socials {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 20px 60px;
+}
+
+.socials img {
+  height: 40px;
+  margin: 15px 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(to right, #46e9ff, #52bbff);
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    z-index: 420;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 100px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu {
+    display: block;
+  }
+  #menulist {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .logo {
+    width: 120px;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
+  .contact {
+    padding: 10px 10px;
+  }
+  .container {
+    background-size: 1600px 1340px;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 .fuckbook {
+    width: 80%;
+    margin-left: 100px;
+    margin: 50px 0 50px 30px;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+  .colorbox {
+    transform: translateX(60px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  .col-1 h1 {
+    font-size: 40px;
+  }
+  .col-1 h3 {
+    font-size: 20px;
+  }
+  .col-1 p {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 14px !important;
+    color: #d92600 !important;
+    margin-bottom: 0 !important;
+  }
+  .carditem{
+    font-size: 90%;
+  }
+  .aldipenimage{
+    width: 200px;
+    height: auto;
+    margin: 20px 15px 30px 15px;
+  }
+  .socials{
+    width: 95%;
+    margin: 20px;
+  }
+}
