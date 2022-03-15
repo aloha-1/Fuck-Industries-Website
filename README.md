@@ -10,7 +10,7 @@ Started with [this](https://youtu.be/lAOkx2yZESY) tutorial, then modified it and
 
 Start: 03/11/2022
 
-Check it out at https://aloha1.netlify.app/!
+Check it out at https://fucksite.netlify.app/!
 
 ---
 
