@@ -12,6 +12,8 @@ Start: 03/11/2022
 
 Check it out at https://aloha1.netlify.app/!
 
+---
+
 ![Screenshot Fuck Industries Website](https://user-images.githubusercontent.com/101637455/158461309-942d51fa-419e-409d-ab32-79db064caf5c.png)
 
 ---
