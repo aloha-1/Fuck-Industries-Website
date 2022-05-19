@@ -4,7 +4,7 @@ My first web project using HTML and CSS.
 
 Experimented with a bunch of different features, especially with CSS.
 
-Contains resposive design and mobile fallback.
+Contains responsive design and mobile fallback.
 
 Started with [this](https://youtu.be/lAOkx2yZESY) tutorial, then modified it and added more on my own.
 
